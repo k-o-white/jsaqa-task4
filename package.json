@@ -1,0 +1,19 @@
+{
+  "name": "jsaqa-task4",
+  "version": "1.0.0",
+  "description": "Fourth task for the Web UI test automation course",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Kirill Burilichev",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.3.1",
+    "jest-puppeteer": "^6.0.0",
+    "puppeteer": "^13.3.2"
+  },
+  "allowScripts": {
+    "puppeteer@13.7.0": true
+  }
+}
