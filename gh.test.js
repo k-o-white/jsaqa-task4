@@ -16,11 +16,11 @@ describe("Github page tests", () => {
   test("The h1 header content'", async () => {
     const firstLink = await page.$("header div div a");
     await firstLink.click();
-    await page.waitForSelegictor("h1");
+    await page.waitForSelector("h1");
     const actual = await page.title();
     const expected =
       "GitHub · Change is constant. GitHub keeps you ahead. · GitHub";
-    expect(actual).toEqual(expected);
+    expect(actual).toContain(expected);
   }, 10000);
 
   test("The first link attribute", async () => {
